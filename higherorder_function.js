@@ -26,3 +26,24 @@ let Func = function(operator , e, f){
 
 console.log(Func(Add,2,3));
 console.log(Func(Sub, 3,2));
+
+
+function outer(){
+   let cout=0;
+
+   function inner(){
+   cout++;
+console.log (cout);
+   }
+
+   return inner;
+}
+
+let increment = outer();
+increment();
+increment();
+increment();
+increment();
+
+
+
